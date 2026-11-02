@@ -7,7 +7,6 @@ url="https://books.toscrape.com/"
 response=requests.get(url)
 soup=BeautifulSoup(response.text,"html.parser")
 
-
 book=[]
 
 for item in soup.find_all("article",class_="product_pod"):
